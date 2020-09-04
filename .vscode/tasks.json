@@ -1,0 +1,36 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "g++ build active file",
+			"type": "shell",
+			"command": "g++",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${workspaceFolder}/bin/${fileBasenameNoExtension}"
+			],
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "clang++ build active file",
+			"type": "shell",
+			"command": "/usr/bin/clang++",
+			"args": [
+				"-std=c++17",
+				"-stdlib=libc++",
+				"-g",
+				"${file}",
+				"-o",
+				"bin/${fileBasenameNoExtension}.out"
+			],
+			"options": {
+				"cwd": "/usr/bin"
+			}
+		},
+	]
+}
