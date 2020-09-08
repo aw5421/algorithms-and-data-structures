@@ -13,7 +13,7 @@ A list of all algorithms I'm currently planning on implementing.
 2. [x] Tables and vectors
    1. [x] Binary search
 3. [ ] Sorting algorithms
-   1. [ ] Bubble sort
+   1. [x] Bubble sort
    2. [ ] Insertion sort
    3. [ ] Merge sort
    4. [ ] Heapsort

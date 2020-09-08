@@ -16,7 +16,7 @@ int binarySearch(T arr[], int n, T val) {
 	return -1;
 }
 
-int main(int argc, const char** argv) {
+int main(int argc, char const *argv[]) {
 	int exampleArr[] = {0, 2, 3, 7, 12, 15};
 	int len = sizeof(exampleArr) / sizeof(exampleArr[0]);
 	std::cout << binarySearch(exampleArr, len, 7) << std::endl;
